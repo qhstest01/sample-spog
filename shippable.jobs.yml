@@ -1,11 +1,11 @@
 jobs:
-  - name: dv-man
+  - name: dv-man-aug
     type: manifest
     steps:
-      - IN: dv-image
+      - IN: dv-image-aug
         pull: false
-      - IN: dv-opts
-      - IN: dv-params
+      - IN: dv-opts-aug
+      - IN: dv-params-aug
         applyTo:
-          - dv-image
+          - dv-image-aug
      
