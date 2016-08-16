@@ -1,0 +1,11 @@
+jobs:
+  - name: dv-man
+    type: manifest
+    steps:
+      - IN: dv-image
+        pull: false
+      - IN: dv-opts
+      - IN: dv-params
+        applyTo:
+          - dv-image
+     
